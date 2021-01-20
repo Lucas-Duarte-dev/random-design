@@ -1,0 +1,70 @@
+main {
+    width: calc(100vw - 30.4rem);
+    background: #111;
+    padding: 1.3rem 0 1.3rem 2rem;
+    margin-left: 30rem;
+}
+.theme {
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.contain-cards {
+    margin-top: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 29rem);
+    grid-gap: 2rem;
+    
+}
+
+.card {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 0.7rem;
+    background: #222;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+.card:hover {
+    transform: scale(1.06);
+}
+.contain-titleImage {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+.contain-titleImage img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+
+.title {
+    opacity: 0;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 30;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.609);
+    transition: 0.3s ease;
+}
+.title:hover {
+    opacity: 1;
+}
+
+.description {
+    padding: 1.2rem 0.8rem;
+}
+.description span {
+    color: #c1c1c1;
+    line-height: 1.7;
+}
